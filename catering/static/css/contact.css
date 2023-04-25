@@ -1,0 +1,197 @@
+body{
+  font-family: "Inter",sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+li{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+.nav-link{
+  border-bottom: solid transparent 2px;
+  font-weight: bold;
+}
+
+.nav-item .active{
+  color: rgb(55, 155, 255) !important;
+}
+
+#navbar .navbar-nav .nav-item .nav-link:hover{
+border-bottom: 2px solid rgb(55, 155, 255);
+}
+
+.nav-link:active{
+color: rgb(55, 155, 255) !important;
+}
+
+.dropdown .dropdown-menu .active{
+  color: #ffffff !important;
+  
+}
+
+#navbar{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.245);
+}
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler:focus {
+  /*Below line will remove the border from the icon
+  I have used bootstrap icon here */
+  /* This will only remove the shadow effect */
+  /* Border is still there */
+  /* if you don't want any border then set the property equals to zero */
+  box-shadow: none !important;
+
+  /* This will remove the rounded corner(radious-border)
+  and give square border */
+  border-radius: 0 !important;   
+}
+
+.navbar-toggler {
+  /* This will completely remove border from the icon */
+  /* If you need border for the icon then comment this code */
+  border: 0 !important;
+
+  /* if you want to check the border please uncomment below code */
+  /* border-color: yellow !important; */
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #000000;
+  border-radius: 1px;
+  opacity: 1;
+  left: -10px;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+  background: rgb(0, 0, 0);
+}
+
+
+
+.book i{
+  color: #0047FF;
+  margin-left:50;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.book{
+  border: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: 'Inter',sans-serif;
+  font-weight:400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.book:hover{
+  box-shadow: 5px 5px  15px grey;
+  transition: .3s;
+}
+
+.book:active{
+  box-shadow: 5px 5px  15px rgb(54, 54, 54);
+  transition: .3s;
+}
+
+
+
+.back{
+  position: none;
+  color: black;
+}
+
+
+
+
+/*Footer*/
+
+
+footer{
+  background-color: rgb(233, 233, 233);
+  box-shadow:   20px 20px 20px 15px #1717179b;
+}
+
+footer .container{
+  margin-top: 100px;
+}
